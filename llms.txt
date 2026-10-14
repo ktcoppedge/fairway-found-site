@@ -4,7 +4,11 @@
 
 ## What we do
 - Found and booked by AI assistants: answer-ready Q&A content, full structured data, bot-friendly booking deep links, consistent listings and reviews, and monthly AI visibility tracking.
-- Local SEO foundation: Google Business Profile optimization, Book-from-Google setup, local landing pages, technical SEO and site speed, review management, booking tracking and monthly reporting.
+- Local SEO foundation: Google Business Profile optimization, Book-from-Google setup, local landing pages, technical SEO and site speed, review management, and booking-click tracking.
+
+## Reporting
+- Five monthly KPIs: AI visibility (mention, citation, and official booking link rates), booking clicks to the course's tee sheet, Google profile actions, local rankings plus organic and AI-referral traffic, and reviews.
+- Booking revenue is reported only if the course shares tee sheet data.
 
 ## Pricing
 - One plan: $1,500 per month. No setup fee. First month free. 12-month agreement with a month-6 walk-away if we haven't moved the numbers.
