@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7e5f"/><stop offset=".45" stop-color="#ffb347"/><stop offset=".62" stop-color="#ffe29a"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".3" r=".7"><stop offset="0" stop-color="#8ee05a"/><stop offset="1" stop-color="#2a8a2f"/></radialGradient></defs>
+<rect width="1600" height="900" fill="url(#s)"/><circle cx="420" cy="520" r="90" fill="#fff2b8" opacity=".95"/>
+<path d="M0 560 Q300 500 600 545 T1200 530 T1600 540 V900 H0Z" fill="#3c7a34"/>
+<g fill="#24561f"><ellipse cx="1000" cy="540" rx="120" ry="70"/><ellipse cx="1180" cy="530" rx="90" ry="60"/><ellipse cx="1500" cy="545" rx="130" ry="70"/></g>
+<ellipse cx="800" cy="780" rx="950" ry="230" fill="url(#g)"/>
+<ellipse cx="900" cy="760" rx="22" ry="7" fill="#123"/>
+<line x1="900" y1="760" x2="900" y2="430" stroke="#fff" stroke-width="7"/>
+<path d="M900 430 l120 34 l-120 34z" fill="#ff4f5e"/>
+<path d="M906 760 L1500 900 H1300Z" fill="#1d5a1e" opacity=".35"/>
+<circle cx="760" cy="800" r="11" fill="#fff"/><path d="M0 900 L0 620 Q500 700 1600 640 V900Z" fill="#ffd27a" opacity=".12"/></svg>
