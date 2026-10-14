@@ -126,3 +126,4 @@ summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}deta
 .links a,.logo{white-space:nowrap}.links{gap:18px}
 @media(max-width:1100px) and (min-width:761px){.links{gap:12px}.links a{font-size:.85rem}}
 @media(max-width:760px){.compare{font-size:.85rem}.compare th,.compare td{padding:10px 8px}}
+.hero{display:flex;align-items:center}.hero>.hero-inner{width:100%}

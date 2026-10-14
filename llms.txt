@@ -1,6 +1,6 @@
 # Fairway Found
 
-> SEO for the AI era. Fairway Found helps public golf courses get found and booked wherever golfers search: AI assistants (ChatGPT, Gemini, Perplexity, Google AI Overviews) and classic Google Search and Maps, with bookings landing on the course's own booking page. Based in Dallas–Fort Worth, Texas.
+> SEO for the AI era. Fairway Found helps public golf courses get found and booked wherever golfers search: AI assistants (ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews) and classic Google Search and Maps, with bookings landing on the course's own booking page. Based in Dallas–Fort Worth, Texas.
 
 ## What we do
 - Found and booked by AI assistants: answer-ready Q&A content, full structured data, bot-friendly booking deep links, consistent listings and reviews, and monthly AI visibility tracking.
