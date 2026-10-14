@@ -78,7 +78,7 @@ function submitLead(kind, data) {
     const on = cbs.filter(c => c.checked), pct = Math.round(on.length / cbs.length * 100);
     $("#ready-meter i").style.width = pct + "%"; $("#ready-meter").setAttribute("aria-valuenow", pct);
     $("#ready-msg").textContent = `${on.length} of ${cbs.length} ready (${pct}%). ` +
-      (pct >= 80 ? "You're close. Time to plan your phased wind-down." : pct >= 50 ? "Solid base. Fill the gaps before cutting trade inventory." : "Start with your booking engine and Google profile.");
+      (pct >= 80 ? "You're well set up for direct bookings. Next: grow search visibility and, if you choose, review your trade inventory." : pct >= 50 ? "Solid base. Fill the remaining gaps to capture more bookings from search." : "Start with your booking engine and Google profile.");
     localStorage.setItem("ff_ready", JSON.stringify(on.map(c => c.value)));
   };
   box.addEventListener("change", upd); upd();
@@ -115,7 +115,7 @@ const QUESTIONS = [
     let score = 0; const recs = [];
     QUESTIONS.forEach(([k, txt, w, fix]) => { const yes = q[k].value === "1"; if (yes) score += w; recs.push(yes ? `<li class="ok">✓ ${txt.replace(/\?$/, "")}: good.</li>` : `<li class="fix">✗ ${fix}</li>`); });
     const g = score >= 90 ? "A" : score >= 75 ? "B" : score >= 60 ? "C" : score >= 40 ? "D" : "F";
-    const summary = { A: "Excellent foundation. Focus on content and phasing out trade inventory.", B: "Strong, with a few gaps holding back direct bookings.", C: "Average. Several fixes could lift direct bookings.", D: "Significant gaps. Golfers may be booking elsewhere.", F: "Major opportunity. Start with Google and your booking path." }[g];
+    const summary = { A: "Excellent foundation. Focus on content, reviews, and local pages to stay first in search.", B: "Strong, with a few gaps holding back direct bookings.", C: "Average. Several fixes could lift direct bookings.", D: "Significant gaps. Golfers may be booking elsewhere.", F: "Major opportunity. Start with Google and your booking path." }[g];
     recs.sort((a, b) => a.includes('"fix"') ? -1 : 1);
     submitLead("seo_scorecard_result", { email: lead.email, course: lead.course, score, grade: g });
     q.hidden = true;
