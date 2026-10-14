@@ -23,6 +23,13 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+# xAI (Grok): xAI publishes no official crawler token; these are the publicly reported names, best effort
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-SearchBot
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
 

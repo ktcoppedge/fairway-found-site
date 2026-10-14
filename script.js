@@ -65,7 +65,7 @@ function submitLead(kind, data) {
 
 // --- SEO audit scorecard (self-assessment, does NOT crawl the site)
 const QUESTIONS = [
-  ["ai", "When you ask ChatGPT, Claude, Gemini, or Perplexity for the best public golf near your city, does your course show up?", 12, "Make your course AI-ready: answer-ready Q&A pages, full structured data, and consistent listings. Try the question yourself monthly, or let us track it for you."],
+  ["ai", "When you ask ChatGPT, Claude, Gemini, Grok, or Perplexity for the best public golf near your city, does your course show up?", 12, "Make your course AI-ready: answer-ready Q&A pages, full structured data, and consistent listings. Try the question yourself monthly, or let us track it for you."],
   ["gbp", "Is your Google Business Profile claimed and verified?", 12, "Claim and verify your Google Business Profile. It's the #1 local search asset."],
   ["gbpbook", "Does the booking button/link on your Google profile go to your own booking page?", 12, "Point your Google booking link to your own engine (and check Reserve with Google eligibility)."],
   ["sitebtn", "Is a 'Book a tee time' button visible on every page of your site?", 10, "Add a persistent booking button in your header on every page."],
