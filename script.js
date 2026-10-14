@@ -59,7 +59,7 @@ function submitLead(kind, data) {
     $("#r-value").textContent = money(value); $("#r-fees").textContent = money(fees); $("#r-total").textContent = money(total);
     const items = [];
     if (total >= 1) {
-      items.push(`About ${(total / 12000).toFixed(1)} months of our Flat plan ($2,000/mo), or ${(total / 1000).toFixed(0)} months of the Hybrid base fee`);
+      items.push(`About ${(total / 1500).toFixed(0)} months of our SEO plan ($1,500/mo)`);
       items.push(`${Math.floor(total / 1500)} new golf carts at an assumed ~$1,500/yr lease each`);
       items.push(`${Math.floor(total / 40000)} part-time seasonal staff at an assumed ~$40,000/yr`);
       items.push(`A year of email/SMS marketing software many times over`);
