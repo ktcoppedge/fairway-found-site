@@ -48,27 +48,6 @@ function submitLead(kind, data) {
   return lead;
 }
 
-// --- Trade time calculator
-(() => {
-  const f = $("#calc"); if (!f) return;
-  const calc = () => {
-    const v = k => Math.max(0, parseFloat(f[k].value) || 0);
-    const rounds = v("perDay") * v("days"), value = rounds * v("rate");
-    const fees = rounds * v("roundFee") + v("bookings") * v("bookFee"), total = value + fees;
-    $("#r-rounds").textContent = Math.round(rounds).toLocaleString();
-    $("#r-value").textContent = money(value); $("#r-fees").textContent = money(fees); $("#r-total").textContent = money(total);
-    const items = [];
-    if (total >= 1) {
-      items.push(`About ${(total / 1500).toFixed(0)} months of our SEO plan ($1,500/mo)`);
-      items.push(`${Math.floor(total / 1500)} new golf carts at an assumed ~$1,500/yr lease each`);
-      items.push(`${Math.floor(total / 40000)} part-time seasonal staff at an assumed ~$40,000/yr`);
-      items.push(`A year of email/SMS marketing software many times over`);
-    } else items.push("Enter your numbers to see what this could fund.");
-    $("#r-fund").innerHTML = items.map(i => `<li>${i}</li>`).join("");
-  };
-  f.addEventListener("input", calc); f.addEventListener("submit", e => e.preventDefault()); calc();
-})();
-
 // --- Readiness checklist (saved in localStorage)
 (() => {
   const box = $("#ready"); if (!box) return;
@@ -78,7 +57,7 @@ function submitLead(kind, data) {
     const on = cbs.filter(c => c.checked), pct = Math.round(on.length / cbs.length * 100);
     $("#ready-meter i").style.width = pct + "%"; $("#ready-meter").setAttribute("aria-valuenow", pct);
     $("#ready-msg").textContent = `${on.length} of ${cbs.length} ready (${pct}%). ` +
-      (pct >= 80 ? "You're well set up for direct bookings. Next: grow search visibility and, if you choose, review your trade inventory." : pct >= 50 ? "Solid base. Fill the remaining gaps to capture more bookings from search." : "Start with your booking engine and Google profile.");
+      (pct >= 80 ? "You're well set up for direct bookings. Next: grow your AI and Google search visibility." : pct >= 50 ? "Solid base. Fill the remaining gaps to capture more bookings from search." : "Start with your booking engine and Google profile.");
     localStorage.setItem("ff_ready", JSON.stringify(on.map(c => c.value)));
   };
   box.addEventListener("change", upd); upd();
@@ -124,19 +103,9 @@ const QUESTIONS = [
     sc.innerHTML = `<div class="grade"><b>${g}</b><div><h3>${lead.course}: ${score}/100</h3><p>${summary}</p></div></div>
       <p class="fine">Self-assessment based on your answers. We did not scan or crawl ${lead.website}.</p>
       <ul class="recs">${recs.join("")}</ul>
-      <p><a class="btn btn-gold full" href="#guide">Get the free step-by-step PDF guide</a></p>
+      <p><a class="btn btn-gold full" href="#pricing">See our $1,500/mo plan, first month free</a></p>
       <p class="fine">${lead.manual ? "A strategist will follow up about your manual review." : "Want a full manual review? Reply to our follow-up email."}</p>`;
     sc.focus?.();
   });
 })();
 
-// --- PDF guide gate
-(() => {
-  const f = $("#guide-form"); if (!f) return;
-  f.addEventListener("submit", e => {
-    e.preventDefault();
-    if (!f.checkValidity()) { $("#guide-err").hidden = false; f.reportValidity(); return; }
-    submitLead("pdf_guide", { email: f.email.value });
-    $("#guide-fields").hidden = true; $("#guide-done").hidden = false;
-  });
-})();
