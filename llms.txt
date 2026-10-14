@@ -1,0 +1,23 @@
+# Fairway Found
+
+> Fairway Found helps public golf courses get found and booked wherever golfers search: AI assistants (ChatGPT, Gemini, Perplexity, Google AI Overviews) and classic Google Search and Maps, with bookings landing on the course's own booking page. Based in Dallas–Fort Worth, Texas.
+
+## What we do
+- Found and booked by AI assistants: answer-ready Q&A content, full structured data, bot-friendly booking deep links, consistent listings and reviews, and monthly AI visibility tracking.
+- Local SEO foundation: Google Business Profile optimization, Book-from-Google setup, local landing pages, technical SEO and site speed, review management, booking tracking and monthly reporting.
+- Optional best practice: guidance on taking more ownership of the tee sheet and reducing marketplace trade times. Never a requirement.
+
+## Pricing
+- One plan: $1,500 per month. No setup fee. First month free. 12-month agreement with a month-6 walk-away if we haven't moved the numbers.
+
+## Honest note
+AI search and booking is an emerging area. No one controls what AI assistants say, and booking support varies by tee sheet provider. We make no guarantees of placement or results.
+
+## Who we serve
+Municipal, daily-fee, and semi-private public golf courses.
+
+## Pages
+- [Home](https://ktcoppedge.github.io/fairway-found-site/): services, AI search approach, pricing, FAQ, free AI & SEO scorecard
+- [Municipal courses](https://ktcoppedge.github.io/fairway-found-site/municipal.html)
+- [Daily-fee courses](https://ktcoppedge.github.io/fairway-found-site/daily-fee.html)
+- [Semi-private courses](https://ktcoppedge.github.io/fairway-found-site/semi-private.html)

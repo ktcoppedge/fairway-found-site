@@ -86,15 +86,16 @@ function submitLead(kind, data) {
 
 // --- SEO audit scorecard (self-assessment, does NOT crawl the site)
 const QUESTIONS = [
+  ["ai", "When you ask ChatGPT, Gemini, or Perplexity for the best public golf near your city, does your course show up?", 12, "Make your course AI-ready: answer-ready Q&A pages, full structured data, and consistent listings. Try the question yourself monthly, or let us track it for you."],
   ["gbp", "Is your Google Business Profile claimed and verified?", 12, "Claim and verify your Google Business Profile. It's the #1 local search asset."],
   ["gbpbook", "Does the booking button/link on your Google profile go to your own booking page?", 12, "Point your Google booking link to your own engine (and check Reserve with Google eligibility)."],
   ["sitebtn", "Is a 'Book a tee time' button visible on every page of your site?", 10, "Add a persistent booking button in your header on every page."],
-  ["mobile", "Does your site load fast on a phone (around 3 seconds or less)?", 10, "Test with Google PageSpeed Insights and compress images or upgrade hosting."],
+  ["mobile", "Does your site load fast on a phone (around 3 seconds or less)?", 6, "Test with Google PageSpeed Insights and compress images or upgrade hosting."],
   ["reviews", "Do you have 100+ Google reviews averaging 4.3 stars or higher?", 10, "Ask for reviews after every round via email/SMS, and reply to every review."],
-  ["recent", "Do you respond to reviews and post Google updates at least monthly?", 8, "Post weekly Google updates (specials, conditions) and respond to all reviews."],
+  ["recent", "Do you respond to reviews and post Google updates at least monthly?", 4, "Post weekly Google updates (specials, conditions) and respond to all reviews."],
   ["schema", "Does your site use structured data (schema) for your golf course?", 8, "Add GolfCourse/LocalBusiness schema with hours, address, and rates."],
-  ["local", "Do you have pages for rates, leagues, lessons, and events?", 10, "Build dedicated pages that match what golfers search for."],
-  ["nap", "Are your name, address, and phone identical across Google, Yelp, Apple Maps, and your site?", 8, "Fix inconsistent listings so search engines trust your location data."],
+  ["local", "Do you have pages for rates, leagues, lessons, and events?", 8, "Build dedicated pages that match what golfers search for."],
+  ["nap", "Are your name, address, and phone identical across Google, Yelp, Apple Maps, and your site?", 6, "Fix inconsistent listings so search engines trust your location data."],
   ["analytics", "Do you track completed online bookings in analytics?", 12, "Set up booking conversion tracking so you can see which channels drive rounds."]
 ];
 (() => {
